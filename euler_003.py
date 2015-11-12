@@ -1,6 +1,6 @@
 def largest_prime_factor(n):
   """Returns the largest prime factor of n."""
-  if n % 2 == 0:
+  if n % 2 == 0 and n > 2:
     return largest_prime_factor(n / 2)
     
   # add 0.1 for floating point error and 1 so the range includes the sqrt
