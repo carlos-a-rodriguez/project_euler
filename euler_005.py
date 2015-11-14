@@ -2,7 +2,7 @@ from numpy import product
 
 
 def primes_to_n(n):
-  """Returns list of all prime numbers from 1 to n."""
+  """Returns list of all prime numbers from 2 to n."""
   if n < 2:
     return []
 
