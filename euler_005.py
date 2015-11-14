@@ -23,7 +23,7 @@ def smallest_multiple(n):
   by all the numbers from 1 to n."""
   sm_mult = product(primes_to_n(n))
 
-  for i in xrange(1, n + 1):
+  for i in xrange(2, n + 1):
     if sm_mult % i != 0:
       rm = sm_mult % i
       sm_mult *= (i / rm)
