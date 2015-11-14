@@ -13,4 +13,6 @@ def fibonacci_even_sum(n):
 
   return count
 
-print fibonacci_even_sum(4000000)
+
+if __name__ == '__main__':
+  print fibonacci_even_sum(4000000)

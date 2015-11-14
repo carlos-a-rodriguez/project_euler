@@ -10,4 +10,6 @@ def multiples_3_or_5_sum(n):
 
   return summation(num_multiples_3) * 3 + summation(num_multiples_5) * 5 - summation(num_multiples_15) * 15
 
-print multiples_3_or_5_sum(1000)
+
+if __name__ == '__main__':
+  print multiples_3_or_5_sum(1000)
