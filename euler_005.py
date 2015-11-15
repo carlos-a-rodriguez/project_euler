@@ -9,11 +9,13 @@ def primes_to_n(n):
   prime_list = [2]
 
   for i in xrange(3, n, 2):
-    prime = True
-    for j in xrange(len(prime_list)):
-      if i % prime_list[j] == 0:
-        prime = False
-    if prime:
+    is_prime = True
+    for prime in prime_list:
+      if prime * prime > i:
+        break
+      if i % prime == 0:
+        is_prime = False
+    if is_prime:
       prime_list.append(i)
 
   return prime_list
