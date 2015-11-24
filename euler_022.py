@@ -14,7 +14,7 @@ def total_name_score(names):
 
 
 if __name__ == '__main__':
-  path = '/home/carlos/Downloads/p022_names.txt'
+  path = 'supplemental_files/p022_names.txt'
 
   try:
     with open(path, 'r') as f:
