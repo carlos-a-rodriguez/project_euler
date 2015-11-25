@@ -55,6 +55,3 @@ docs/_build/
 
 # PyBuilder
 target/
-
-# Text files used to solve project euler problems
-*.txt
