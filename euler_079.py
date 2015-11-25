@@ -11,7 +11,7 @@ def create_graph():
 
 
 if __name__ == '__main__':
-  with open('supplemental_files/p079_keylog.txt', 'r') as f:
+  with open('res/p079_keylog.txt', 'r') as f:
     graph = create_graph()
 
     for line in f:
