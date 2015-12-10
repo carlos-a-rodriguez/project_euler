@@ -7,7 +7,7 @@ if __name__ == '__main__':
   result = []
 
   for n in xrange(10):
-    for d in xrange(1, 10):
+    for d in xrange(n + 1, 10):
       for x in xrange(n + 1, 10):
         numerator = n * 10 + x
         denominator = x * 10 + d
