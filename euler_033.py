@@ -15,8 +15,8 @@ if __name__ == '__main__':
         if abs(float(numerator) / denominator - float(n) / d) < epsilon:
           result.append((numerator, denominator))
 
-  num_prod = reduce(lambda (w, x), (y, z): (w * y, x * z), result)
+  frac = reduce(lambda (w, x), (y, z): (w * y, x * z), result)
 
-  gcd = fractions.gcd(num_prod[0], num_prod[1])
+  gcd = fractions.gcd(frac[0], frac[1])
 
-  print num_prod[1] / gcd
+  print frac[1] / gcd
